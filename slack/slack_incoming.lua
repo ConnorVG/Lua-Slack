@@ -74,7 +74,5 @@ function SlackIncoming.__index:HasError()
 end
 
 function SlackIncoming.__index:Slack()
-	print(self.data.token)
-
 	return Slack.GetTokenInstance(self.data.token)
 end
